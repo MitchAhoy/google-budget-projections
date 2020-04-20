@@ -33,7 +33,7 @@ function loadTableData(outputData) {
         <td>${(i.additionalConversions).toFixed(2)}</td>
         <td>$${(i.additionalCost).toFixed(2)}</td>
         <td><a class="view-more" href="/campaign-metrics.html#${i.id}">View More</a></td>
-        <td><img class="delete-btn" id="${i.id}" onclick="removeCampaign('${i.id}')" src="img/delete.svg" alt=""></td>
+        <td><img class="delete-btn" id="${i.id}" onclick="removeCampaign('${i.id}')" src="/img/delete.svg" alt=""></td>
       </tr>`
   })
   tableBody.innerHTML = dataHtml
