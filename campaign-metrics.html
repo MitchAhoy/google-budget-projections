@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campaign Metrics</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="data-page">
+    <div class="page-heading"></div>
+    <table class="content-table" id="basic-metrics">
+      <thead>
+        <tr>
+          <th>Clicks</th>
+          <th>Impr.</th>
+          <th>CTR</th>
+          <th>Cost</th>
+          <th>Avg. CPC</th>
+          <th>Conv.</th>
+          <th>Cost/conv.</th>
+          <th>Conv. Rate</th>
+          <th>IS Lost (Rank)</th>
+          <th>IS Lost (Budget)</th>
+          <th>Impr. Share</th>
+        </tr>
+      </thead>
+      <tbody id="basicMetricsData"></tbody>
+    </table>
+
+    <table class="content-table" id="projected-metrics">
+      <thead>
+        <tr>
+          <th>Total Impr. Eligible</th>
+          <th>Potential Impr. 0% Budget</th>
+          <th>Potential Impr. 0% Rank</th>
+          <th>Projected Impr.</th>
+          <th>Projected Clicks</th>
+          <th>Projected Cost</th>
+          <th>Projected Conv.</th>
+        </tr>
+      </thead>
+      <tbody id="projectedMetricsData"></tbody>
+    </table>
+
+    <table class="content-table" id="additional-metrics">
+      <thead>
+        <tr>
+          <th>Additional Impr.</th>
+          <th>Additional Clicks</th>
+          <th>Additional Cost</th>
+          <th>Additional Conv.</th>
+          <th>Additional CPA</th>
+        </tr>
+      </thead>
+      <tbody id="additionalMetricsData"></tbody>
+    </table>
+
+    <div id="control-btns">
+      <a href="/index.html" class="btn" id="go-back">Go Back</a>
+    </div>
+
+
+
+
+
+  </div>
+  <script src="/currency.js"></script>
+  <script src="/functions.js"></script>
+  <script src="/campaign-tables.js"></script>
+</body>
+
+</html>

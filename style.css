@@ -1,0 +1,364 @@
+/* 
+Headings: #061058
+Paragraphs: #B4B7CC
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+}
+
+h1, h2, h2 {
+  color: #061058;
+}
+
+p {
+  color: #B4B7CC;
+  padding: 1rem 0;
+}
+
+a {
+  text-decoration: none;
+  color: #061058;
+}
+
+.view-more:hover{
+  background: #ececec;
+
+}
+
+#site-container{
+  max-width:1359px;
+  margin: auto;
+}
+
+#header-container {
+  display: flex;
+  height: 60vh;
+  justify-content:center;
+  align-items: center;
+}
+
+.left-container{
+  max-width: 450px;
+  width: 50%;
+  padding: 2rem;
+}
+
+.btn, .btn a {
+  background: rgb(58, 120, 255);
+  border: none;
+  border-radius:20px ;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 1rem;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 14px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  padding: 0.5rem 1rem;
+}
+
+.btn:hover{
+  background: rgb(31, 72, 160)
+}
+
+#calculate-btn {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  padding:0rem 1rem;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+
+#enter-metrics{
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.right-container {
+  width: 50%;
+  padding: 2rem;
+  text-align: center;
+}
+
+#hero-img{
+  max-width: 300px;
+}
+
+
+.input-card-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1440px;
+  margin: auto;
+  align-items: center;
+}
+
+.input-card {
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border-bottom: rgb(58, 120, 255) 3px solid;
+  background: #fff;
+}
+
+/* Hide arrows */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* Purple card borders */
+.input-card:nth-child(2n + 1) {
+  border-bottom: rgb(163, 88, 223) 3px solid;
+}
+
+/* Green card borders */
+.input-card:nth-child(4n + 1) {
+  border-bottom: rgb(0, 202, 114) 3px solid;
+}
+
+/* Pink card borders */
+.input-card:nth-child(4n) {
+  border-bottom: rgb(255, 4, 118) 3px solid;
+}
+
+.input-card input {
+  border: none;
+  background: #eee;
+  padding: 1rem;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 1rem;
+}
+
+input:focus, button:focus {
+  outline: none;
+}
+
+label {
+  color: rgb(138, 140, 155);
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.output-container{
+  background: #f7fafc;
+}
+
+#results{
+  padding: 1rem;
+  border-radius: 10px;
+  height: 50px;
+  margin: 2rem;
+  background: #fff;
+  max-width: 1440px;
+  margin: auto;
+}
+
+/* Responsive */
+@media only screen and (max-width: 750px) {
+  
+  #header-container {
+    flex-direction: column;
+  }
+
+  .left-container{
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .right-container {
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+
+  .btn, .btn a {
+    margin-top: 0rem;
+    padding: 0.5rem ;
+    text-align: center;
+  }
+
+  #enter-metrics {
+    font-size: 20px;
+  }
+
+}
+
+/* Tabel */
+
+
+
+.content-table {
+  border-collapse: collapse;
+  margin: auto;
+  font-size: 0.7em;
+  width: 90%;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  margin-bottom: 2rem;
+}
+
+.content-table thead tr {
+  background-color: #061058;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid rgb(58, 120, 255);
+}
+
+.content-table tbody tr.active-row {
+  font-weight: bold;
+  color: #fff;
+  background: #061058;
+}
+
+tbody tr {
+  text-align: center;
+}
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+  }
+  
+  tbody tr {
+    text-align: right;
+  }
+  thead tr {
+    text-align: left;
+  }
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+  }
+
+  
+
+  td:nth-of-type(1):before { content: "Campaign Name"; }
+	td:nth-of-type(2):before { content: "Addit. Clicks"; }
+	td:nth-of-type(3):before { content: "Addit. Conversions"; }
+	td:nth-of-type(4):before { content: "Addit. Cost"; }
+	td:nth-of-type(5):before { content: "Detailed Breakdown"; }
+  td:nth-of-type(6):before { content: "Remove"; }
+
+  #basic-metrics td:nth-of-type(1):before { content: "Clicks"; }
+  #basic-metrics td:nth-of-type(2):before { content: "Impr."; }
+  #basic-metrics td:nth-of-type(3):before { content: "CTR"; }
+  #basic-metrics td:nth-of-type(4):before { content: "Cost"; }
+  #basic-metrics td:nth-of-type(5):before { content: "Avg. CPC"; }
+  #basic-metrics td:nth-of-type(6):before { content: "Conv."; }
+  #basic-metrics td:nth-of-type(7):before { content: "Cost/conv."; }
+  #basic-metrics td:nth-of-type(8):before { content: "Conv. Rate"; }
+  #basic-metrics td:nth-of-type(9):before { content: "IS Lost (Rank)"; }
+  #basic-metrics td:nth-of-type(10):before { content: "IS Lost (Budget)"; }
+  #basic-metrics td:nth-of-type(11):before { content: "Impr. Share"; }
+
+
+  #projected-metrics td:nth-of-type(1):before { content: "Total Impr. Eligible"; }
+  #projected-metrics td:nth-of-type(2):before { content: "Potential Impr. 0% Budget"; }
+  #projected-metrics td:nth-of-type(3):before { content: "Potential Impr. 0% Rank"; }
+  #projected-metrics td:nth-of-type(4):before { content: "Projected Impr."; }
+  #projected-metrics td:nth-of-type(5):before { content: "Projected Clicks"; }
+  #projected-metrics td:nth-of-type(6):before { content: "Projected Cost"; }
+  #projected-metrics td:nth-of-type(7):before { content: "Projected Conv."; }
+
+  #additional-metrics td:nth-of-type(1):before { content: "Additional Impr."; }
+  #additional-metrics td:nth-of-type(2):before { content: "Additional Clicks"; }
+  #additional-metrics td:nth-of-type(3):before { content: "Additional Cost"; }
+  #additional-metrics td:nth-of-type(4):before { content: "Additional Conv."; }
+  #additional-metrics td:nth-of-type(5):before { content: "Additional CPA."; }
+  }
+
+.delete-btn{
+  width: 15px;
+  cursor: pointer;
+}
+	
+/* TABLE DATA */
+#campaign-title{
+  text-align: center;
+  padding: 2rem 0;
+  text-transform: capitalize;
+}
+
+#data-page{
+  height: 100vh;
+  max-width: 900px;
+  margin: auto;
+}
+
+#control-btns{
+  text-align: center;
+}
