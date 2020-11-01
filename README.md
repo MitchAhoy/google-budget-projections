@@ -6,4 +6,4 @@ An application designed for Google Ads account managers to quickly forecast how 
 - HTML
 - CSS
 
-See the live application here: http://google-ads-projections.mitchh.xyz/
+See the live application here: https://google-budget-projections.mitchh.xyz/
